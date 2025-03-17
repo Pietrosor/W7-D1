@@ -23,6 +23,6 @@ form.addEventListener("submit", function (e) {
     speciesInput.value,
     breedInput.value
   )
-  console.log("Nuovo animale" + anotherPet)
+  console.log("Nuovo animale", anotherPet)
   form.reset()
 })

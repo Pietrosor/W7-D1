@@ -26,4 +26,12 @@ form.addEventListener("submit", function (e) {
   form.reset()
 })
 
-const ageDifference = function (otherUser) {}
+const ageDifference = function (otherUser) {
+  if (this.age > otherUser.age) {
+    return this.firstName, "è più grande di ", otherUser.firstName
+  } else if (this.age < otherUser.age) {
+    return this.firstName, " è più piccolo di ", otherUser.firstName
+  } else {
+    return this.firstName, " ha la stessa età di ", otherUser.firstName
+  }
+}
